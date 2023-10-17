@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}    
+
+body{
+background:#131418;
+font-family: 'Poppins', sans-serif;
+}
+
+.container{
+padding:20px;  
+background:#1D1D27;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:5px;
+width:340px;
+}
+
+.container .search-box{
+height:55px;  
+width:100%;
+position:absolute;
+top:0;
+left:0;
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:15px;
+}
+
+.container .search-box .search{
+height:40px; 
+width:90%;
+border-radius:30px;
+border:1px solid grey;
+display:flex;
+align-items:center;
+padding-left:20px;
+}
+
+.container .search-box .search input{
+all:unset; 
+height:40px;
+width:90%;
+border-radius:30px;
+font-size:14px;
+color:grey;
+}
+
+.container .search-box .search i{
+color:grey;        
+}
+
+.container .superheroImg{
+height:150px;      
+width:150px;
+border-radius:3px;
+margin-left:75px;
+margin-top:60px;
+}
+
+.container .superheroName{
+text-align:center;
+color:white;
+color:#f7af37;
+}
+
+.container .other{
+height:250px;
+width:100%;
+}
+
+.container .other .options{
+color:white;  
+height:35px;
+white-space:nowrap;
+overflow-x:scroll;
+display:flex;
+align-items:center;
+margin-top:10px;
+border-bottom:1px solid grey;
+}
+
+.options::-webkit-scrollbar{
+display:none;       
+}
+
+.container .other .options span{
+font-size:10px;
+font-weight:600;
+margin-left:11px;
+position:relative;
+left:-8px;
+text-transform:uppercase;
+cursor:pointer;
+}
+
+.container .other .options #marker{
+height:2px; 
+width:70px;
+background:#f7af37;
+position:absolute;
+margin-top:33px;
+left:20px;
+transition:all .2s;
+}
+
+.container .other .tab-content{
+height:210px;   
+margin-top:12px;
+}
+
+.container .other .tab-content div{
+height:210px; 
+width:100%;
+display:none;
+}
+
+.container .other .tab-content .active{
+display:block;       
+}
+
+.other .tab-content .powerstate li{
+height:30px; 
+width:100%;
+margin-top:5px;
+list-style:none;
+background:#1D1D27;
+box-shadow:1px 1px 1px .5px #000000;
+padding-left:10px;
+display:flex;
+align-items:center;
+border-radius:3px;
+}
+
+.other .tab-content .biography{
+overflow:scroll;        
+}
+
+.other .tab-content .biography::-webkit-scrollbar{
+display:none;
+}
+
+.other .tab-content .biography li{
+list-style:none;   
+color:white;
+height:30px;
+width:100%;
+margin-top:3px;
+display:flex;
+align-items:center;
+font-size:12px;
+padding-left:10px;
+white-space:nowrap;
+}
+
+.other .tab-content .biography li span{
+color:grey; 
+position:relative;
+left:-5px;
+}
+
+.other .tab-content .powerstate li i{
+color:#F56F68; 
+font-size:13px;
+}
+
+.other .tab-content .powerstate li span:nth-child(2){
+color:grey; 
+font-size:13px;
+margin-left:10px;
+text-transform:uppercase;
+}
+
+.other .tab-content .powerstate li span:nth-child(3){
+color:#f7af37;
+font-size:13px;
+position:absolute;
+right:30px;
+}
+
+.other .tab-content .appearance li{
+height:30px;      
+width:100%;
+margin-top:3px;
+padding:5px;
+display:flex;
+align-items:center;
+list-style-type:none;
+}
+
+.other .tab-content .connections{
+overflow-y:scroll;      
+}
+
+.other .tab-content .connections::-webkit-scrollbar{
+display:none;        
+}
+
+.other .tab-content .connections h2{
+color:white;        
+text-transform:uppercase;
+font-size:13px;
+margin-top:16px;
+position:relative;
+top:-10px;
+}
+
+.other .tab-content .connections h2::before{
+content:"";
+height:1px;
+width:140px;
+background:#f7af37;
+position:absolute;
+margin-top:20px;
+}
+
+.other .tab-content .connections h2:nth-child(3)::before{
+width:70px;        
+}
+
+.other .tab-content .connections span{
+color:grey;       
+font-size:13px;
+position:relative;
+top:-5px;
+}
+
+.other .tab-content .appearance li i{
+color:#f7af37;      
+font-size:13px;
+}
+
+.other .tab-content .appearance li span{
+font-size:13px;
+color:white;
+margin-left:10px;
+text-transform:uppercase;
+white-space:nowrap;
+}
+
+.other .tab-content .appearance li div{
+position:absolute;        
+right:30px;
+border-radius:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#F56F68;
+color:white;
+padding:5px;
+height:20px;
+max-width:70px;
+font-size:13px;
+}
+
+.result{
+}
+
+.container .msg{
+margin-top:60px;  
+color:grey;
+white-space:nowrap;
+text-align:center;
+display:none;
+}
